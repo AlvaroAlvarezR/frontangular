@@ -1,0 +1,137 @@
+<div>
+
+    <div class="d-flex justify-content-between">
+      <h4>Form customer</h4>
+      <a href="#" routerLink="/thirdparty/index" class="btn btn-primaryt">Back</a>
+    </div>
+  
+    <hr/>
+  
+    <form [formGroup]="form" (ngSubmit)="submit()">
+
+        <div class="form-group row">
+            <div class="col-md-6 ">
+                <label for="name1">Name1:</label>
+                <input
+                    formControlName="name1"
+                    id="name1"
+                    type="text"
+                    class="form-control">
+                <!-- <div *ngIf="f.name1.touched && f.name1.invalid" class="alert alert-danger">
+                    <div *ngIf="f.name1.errors.required">*Name is required.</div>
+                    <div *ngIf="f.name1.errors.pattern">*The name must only contain letters.</div>
+                </div> -->
+            </div>
+            <div class="col-md-6 ">
+                <label for="name2">Name2:</label>
+                <input
+                    formControlName="name2"
+                    id="name2"
+                    type="text"
+                    class="form-control">
+                <!-- <div *ngIf="f.name2.touched && f.name2.invalid" class="alert alert-danger">
+                    <div *ngIf="f.name2.errors.required">*Email is required.</div>
+                    <div *ngIf="f.name2.errors.email">*The email must be a valid email address.</div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-md-6 ">
+                <label for="lastname1">Lastname1:</label>
+                <input
+                formControlName="lastname1"
+                id="lastname1"
+                type="text"
+                class="form-control">
+                <!-- <div *ngIf="f.lastname1.touched && f.lastname1.invalid" class="alert alert-danger">
+                    <div *ngIf="f.lastname1.errors.required">*Email is required.</div>
+                    <div *ngIf="f.lastname1.errors.email">*The email must be a valid email address.</div>
+                </div> -->
+            </div>
+            <div class="col-md-6 ">
+                <label for="lastname2">Lastname2:</label>
+                <input
+                formControlName="lastname2"
+                id="lastname2"
+                type="text"
+                class="form-control">
+                <!-- <div *ngIf="f.lastname2.touched && f.lastname2.invalid" class="alert alert-danger">
+                    <div *ngIf="f.lastname2.errors.required">*Email is required.</div>
+                    <div *ngIf="f.lastname2.errors.email">*The email must be a valid email address.</div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-md-6 ">
+                <label for="id_type_id">Id Type:</label>
+                <input
+                    formControlName="id_type_id"
+                    id="id_type_id"
+                    type="number"
+                    class="form-control">
+                <!-- <div *ngIf="f.id_type_id.touched && f.id_type_id.invalid" class="alert alert-danger">
+                    <div *ngIf="f.id_type_id.errors.required">*Phone is required.</div>
+                    <div *ngIf="f.id_type_id.errors.pattern">*The phone must only contain numbers.</div>
+            </div> -->
+            </div>
+            <div class="col-md-6 ">
+                <label for="third_type_id">Third Type:</label>
+                <input
+                    formControlName="third_type_id"
+                    id="third_type_id"
+                    type="number"
+                    class="form-control">
+                <!-- <div *ngIf="f.third_type_id.touched && f.third_type_id.invalid" class="alert alert-danger">
+                    <div *ngIf="f.third_type_id.errors.required">*Phone is required.</div>
+                    <div *ngIf="f.id_third_type_idtype_id.errors.pattern">*The phone must only contain numbers.</div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-md-6 ">
+                <label for="municipality_id">Municipality id:</label>
+                <input
+                    formControlName="municipality_id"
+                    id="municipality_id"
+                    type="number"
+                    class="form-control">
+                <!-- <div *ngIf="f.municipality_id.touched && f.municipality_id.invalid" class="alert alert-danger">
+                    <div *ngIf="f.municipality_id.errors.required">*Phone is required.</div>
+                    <div *ngIf="f.municipality_id.errors.pattern">*The phone must only contain numbers.</div>
+                </div> -->
+            </div>
+            <div class="col-md-6 ">
+                <label for="department_id">Department id:</label>
+                <input
+                    formControlName="department_id"
+                    id="department_id"
+                    type="number"
+                    class="form-control">
+                <!-- <div *ngIf="f.department_id.touched && f.department_id.invalid" class="alert alert-danger">
+                    <div *ngIf="f.department_id.errors.required">*Phone is required.</div>
+                    <div *ngIf="f.department_id.errors.pattern">*The phone must only contain numbers.</div> -->
+            </div>
+        </div>
+        
+        <div class="form-group row">
+            <div class="col-md-6 ">
+                <label for="taxpayer_type_id">Taxpayer Type:</label>
+                <input
+                    formControlName="taxpayer_type_id"
+                    id="taxpayer_type_id"
+                    type="number"
+                    class="form-control">
+                <!-- <div *ngIf="f.taxpayer_type_id.touched && f.taxpayer_type_id.invalid" class="alert alert-danger">
+                    <div *ngIf="f.taxpayer_type_id.errors.required">*Phone is required.</div>
+                    <div *ngIf="f.taxpayer_type_id.errors.pattern">*The phone must only contain numbers.</div>
+                </div> -->
+            </div>
+        </div>
+
+        <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Submit</button>
+    </form>
+</div>
+  
